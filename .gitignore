@@ -32,3 +32,4 @@ package-lock.json
 
 .history
 
+vite.config.ts
