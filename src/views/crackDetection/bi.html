@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.jscrollpane.lozenge.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--背景-->
+<div class="background"><img src="../images/bg1.jpg" alt="" /><div class="logo"></div></div>
+<!--主内容开始-->
+<div id="container">
+  <div id="head">
+    <a href="#" class="arrange" id="arrange"></a>
+    <div class="yij"><a href="#" class="making">医院决策管理</a></div>
+    <div class="h-right">
+      <a href="#" class="home"></a>
+      <img src="../images/line.png" width="2" height="50" alt="" />
+      <a href="#" class="cloud" id="cloud">
+        <div class="same">云同步</div>
+      </a>
+      <img src="../images/line.png" width="2" height="50" alt="" />
+      <a href="#" class="bell"><span class="tip">3</span></a>
+      <img src="../images/line.png" width="2" height="50" alt="" />
+      <div class="user">
+        <div class="pho"><img src="../images/photo.jpg" width="52" height="50" alt="" /></div>
+        <span id="name">张末末
+          <div class="user-info" id="twodm">
+            <div class="jtt"></div>
+            <div class="menu">
+              <div class="first">
+                <a href="#">个人信息</a>
+              </div>
+              <div class="second">
+                <a href="#">通知<em>3</em></a>
+              </div>
+              <a href="#" class="quit">退出</a>
+            </div>
+          </div>
+        </span>
+        
+      </div>
+      <img src="../images/line.png" width="2" height="50" alt="" />
+      <a href="#" class="notice" id="notice"></a> 
+    </div>
+  </div>
+  <!--侧边栏-右-->
+  <div class="side-bar" id="side-bar">
+    <div class="side-bar-in">
+      <ul class="tab">
+        <li class="title vtitle">
+          <a href="#" class="lianxi"></a>
+        </li>
+        <li class="title">
+          <a href="#" class="heart"></a>
+        </li>
+        <li class="title">
+          <a href="#" class="setting"></a>
+        </li>
+        <div class="vcon" id="vcon" style="display:block;">
+          <ul>
+            <li>
+              <div class="pic"><span class="tis">10</span></div>
+              <span>
+                <h4>张末末</h4>
+                <p>厦门市第一医院</p>
+              </span>
+              <a href="#" class="v-big"></a>
+            </li>
+            <li class="xuanz">
+              <div class="pic"><span class="tis">10</span></div>
+              <span>
+                <h4>张末末</h4>
+                <p>厦门市第一医院</p>
+              </span>
+              <a href="#" class="v-big"></a>
+            </li>
+            <li>
+              <div class="pic"><span class="tis">10</span></div>
+              <span>
+                <h4>张末末</h4>
+                <p>厦门市第一医院</p>
+              </span>
+              <a href="#" class="v-big"></a>
+            </li>
+            <li>
+              <div class="pic"></div>
+              <span>
+                <h4>张末末</h4>
+                <p>厦门市第一医院</p>
+              </span>
+              <a href="#" class="v-big"></a>
+            </li>
+            <li>
+              <div class="pic"><span class="tis">10</span></div>
+              <span>
+                <h4>张末末</h4>
+                <p>厦门市第一医院</p>
+              </span>
+              <a href="#" class="v-big"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="vcon">2</div>
+        <div class="vcon">
+          <div class="block">
+            <span>背景颜色选择</span>
+            <a href="#" class="dot" id="blue"><img src="../images/blue_dot.png" width="14" height="14" alt="" /></a>
+            <a href="#" class="dot" id="pink"><img src="../images/pink_dot.png" width="14" height="14" alt="" /></a>
+            <a href="#" class="dot" id="green"><img src="../images/green_dot.png" width="14" height="14" alt="" /></a>
+          </div>
+          <div class="block">
+            <span>显示不在线医生</span>
+            <a href="#" class="off" id="off"></a>
+          </div>
+          <div class="block">
+            <span>消息提示</span>
+            <a href="#" class="open" id="open"></a>
+          </div>
+        </div>
+      </ul>
+      
+    </div>
+  </div>
+  <!--左侧栏begin-->
+  <div class="left-bar" id="left-bar">
+    <ul>
+      <li><a href="#" class="synergy">医技协同<em>医技协同</em></a></li>
+      <li><a href="#" class="movie">影像诊断<em>影像诊断</em></a></li>
+      <li><a href="#" class="computer">预约协同<em>预约协同</em></a></li>
+      <li><a href="#" class="drug">预交金管理<em>预交金管理</em></a></li>
+      <li><a href="#" class="results">个人绩效<em>个人绩效</em></a></li>
+    </ul>
+  </div>
+  <!--左侧栏end-->
+  <!--模块-->
+  <div id="mid">
+    <div class="main_visual" id="aa">
+    <div class="flicking_con">
+      <div class="flicking_inner">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+      </div>
+    </div>
+    <a href="javascript:;" id="btn_prev"></a>
+    <a href="javascript:;" id="btn_next"></a>
+    <div class="main_image">
+        <ul>					
+            <li>
+              <div class="outpatient">
+                <a href="#" class="re-out"></a>
+                <h3>门诊量趋势图(单位：人次)</h3>
+                <div class="chart">
+                  <div class="zzt">
+                    <img src="../images/p1.png" width="738" height="202" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!--医院费用-->
+              <div class="cost">
+                <a href="#" class="re-out"></a>
+                <h3>
+                  <a href="#" id="year">2014年
+                    <ul>
+                      <li>2013年</li>
+                      <li>2012年</li>
+                    </ul>
+                  </a>
+                  <a href="#">5月</a>医院费用构成分析
+                </h3>
+                <div class="chart">
+                  <div class="btu">
+                    <img src="../images/bingt.png"  alt="" />
+                  </div>
+                  <div class="instr">
+                    <div class="wz"><img src="../images/01.png" width="9" height="9" alt="" /><span>西药<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/02.png" width="9" height="9" alt="" /><span>中草药费<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/03.png" width="9" height="9" alt="" /><span>化验费<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/04.png" width="9" height="9" alt="" /><span>检验费<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/05.png" width="9" height="9" alt="" /><span>治疗费<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/06.png" width="9" height="9" alt="" /><span>手术费<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/07.png" width="9" height="9" alt="" /><span>中成药费<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/08.png" width="9" height="9" alt="" /><span>卫生材料费<em>42.50%</em></span></div>
+                    <div class="wz"><img src="../images/09.png" width="9" height="9" alt="" /><span>其他<em>42.50%</em></span></div>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="pay">
+                <div class="kuai">
+                  <h3><a href="#">5月</a>门诊费用</h3>
+                  <a href="#" class="refresh"></a>
+                  <div class="k-con">
+                    <span class="fall">49285<em>（元）</em></span>
+                    <p>环比上月：20,8860<em>减少</em><em class="xia">-1.27%</em></p>
+                    <p>同比去年：19,3201<em>上升</em><em class="rise">3.29%</em></p>
+                  </div>
+                </div>
+                <div class="kuai times">
+                  <h3><a href="#">5月</a>门诊人次</h3>
+                  <a href="#" class="refresh"></a>
+                  <div class="k-con">
+                    <span class="fall">49285<em>（次）</em></span>
+                    <p>环比上月：20,8860<em>减少</em><em class="xia">-1.27%</em></p>
+                    <p>同比去年：19,3201<em>上升</em><em class="rise">3.29%</em></p>
+                  </div>
+                </div>
+                <div class="kuai average no-bg">
+                  <h3><a href="#">5月</a>门诊平均费用</h3>
+                  <a href="#" class="refresh"></a>
+                  <div class="k-con">
+                    <span class="fall">49285<em>（元）</em></span>
+                    <p>环比上月：20,8860<em>减少</em><em class="xia">-1.27%</em></p>
+                    <p>同比去年：19,3201<em>上升</em><em class="rise">3.29%</em></p>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="guah">
+                <a href="#" class="re-out"></a>
+                <h3>2014年5月全天挂号统计</h3>
+                <div class="chart">
+                  <div class="zst">
+                    <img src="../images/guah.png" width="368" height="126" alt="" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>2</li>
+            <li>3</li>
+        </ul>  
+    </div>
+  </div>
+    <div class="f-menu-bar" id="f-menu-bar">
+      <div class="f-menu-bar-in">
+        <div class="date">
+          <div class="d-top">
+            <span>星期五</span>
+            <a href="#" class="prev"></a>
+            <a href="#" class="next"></a>
+          </div>
+          <div class="d-con">
+            <span class="today">28</span>
+            <a href="#" class="cheat"><img src="../images/cheat.png" width="72" height="66" alt="" /></a>
+          </div>
+        </div>
+        <div class="date">
+        <div class="d-top">
+          <h2>常用联系人（1/10）</h2>
+          <a href="#" class="add"></a>
+        </div>
+        <div class="contact">
+          <ul>
+            <li class="xz">
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name n-no">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name n-no">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li>
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+            <li class="last">
+               <div>
+                 <div class="toux"></div>
+                 <span class="name">张末末</span>
+                 <a href="#" class="voice"></a>
+                 <a href="#" class="edtior"></a>
+               </div>
+               <ul>
+                 <textarea cols="" rows="" class="textarea">请输入您的信息...</textarea>
+                 <a href="#" class="bar">发送消息</a>
+               </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="date">
+        <div class="d-top">
+          <h2 class="xiaox">个人消息<em class="r-dot"></em></h2>
+        </div>
+        <div class="infor">
+          <span>您有一份来自厦门第一医院B超报告</span>
+        </div>
+      </div>
+      <!---->
+     </div>
+   </div>
+</div>
+<!--浮动菜单-->
+<div class="float" id="float">
+  <a href="javascript:;" class="m-date"></a>
+  <a href="javascript:;" class="m-user"></a>
+  <a href="javascript:;" class="m-notice"></a>
+</div>
+</div>
+<!--主内容结束-->
+</body>
+
+<script src="../js/jquery-1.7.1.min.js" language="javascript" type="text/javascript"></script>
+<script src="../js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="../js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="../js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="../js/jquery.nicescroll.js"></script>
+<script src="../js/slide.js" language="javascript" type="text/javascript"></script>
+<!--[if IE 6]> <script src="../js/EvPng.js" type="text/javascript"></script> 
+<script language="javascript" type="text/javascript"> 
+EvPNG.fix("*");
+</script> 
+<![endif]-->
+<script type="text/javascript">
+
+</script>
+
+</html>

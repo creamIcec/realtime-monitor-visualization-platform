@@ -1,0 +1,65 @@
+.slide-out{
+    animation-duration: 0.5s;
+    animation-name: slide-out;
+}
+
+.slide-in{
+    animation-duration: 0.5s;
+    animation-name: slide-in;
+}
+
+.head-slide-out{
+    animation-duration: 0.5s;
+    animation-name: head-slide-in;
+}
+
+.head-slide-in{
+    animation-duration: 0.5s;
+    animation-name: head-slide-out;
+}
+
+@keyframes head-slide-in {
+    
+    from{
+        top: 0;
+    }
+
+    to{
+        top: -100px;
+    }
+
+}
+
+@keyframes head-slide-out{
+
+    from{
+        top: -100px;
+    }
+
+    to{
+        top: 0;
+    }
+    
+}
+
+@keyframes slide-out {
+    
+    from {
+        left: 20px;
+    }
+
+    to{
+        left: -100px;
+    }
+}
+
+@keyframes slide-in{
+
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 20px;
+    }
+}
