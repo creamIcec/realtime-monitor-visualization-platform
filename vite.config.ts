@@ -43,7 +43,7 @@ export default async ({ command, mode }: ConfigEnv): Promise<UserConfig> => {
       // Load proxy configuration from .env
       proxy: createProxy(VITE_PROXY),
       fs: {
-        allow: ['F:/Projects/DetectionFramework/frontend-demo', 'F:/Projects/DetectionFramework/frontend-demo/src/main.ts']
+        allow: ['D:/Resources/Datas/Codes/ruoyi/realtime-monitor-visualization-platform']
       }
     },
     resolve: {
