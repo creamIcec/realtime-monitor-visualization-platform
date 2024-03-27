@@ -32,4 +32,4 @@ package-lock.json
 
 .history
 
-vite.config.js
+vite.config.ts
