@@ -31,3 +31,5 @@ pnpm-debug.log*
 package-lock.json
 
 .history
+
+vite.config.ts
