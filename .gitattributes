@@ -1,4 +1,5 @@
 # https://docs.github.com/cn/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+vite.config.ts merge=ours
 
 # Automatically normalize line endings (to LF) for all text-based files.
 * text=auto eol=lf
