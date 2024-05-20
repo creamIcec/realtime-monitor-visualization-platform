@@ -68,7 +68,7 @@ export default {
     signUpFormTitle: '注册',
     forgetFormTitle: '重置密码',
 
-    signInTitle: '南工大web大作业管理系统',
+    signInTitle: '实时动态检测框架-前端演示',
     signInDesc: '点击登陆输入个人信息开始使用！',
     policy: '我同意xxx隐私政策',
     scanSign: `扫码后点击"确认"，即可完成登录`,
