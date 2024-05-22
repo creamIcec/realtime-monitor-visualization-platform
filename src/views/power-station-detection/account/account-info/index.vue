@@ -32,41 +32,19 @@
   import { AreaBar } from '@/components/AreaBar';
   import { DropdownButton, RangePicker, Table } from "ant-design-vue";
   //import { ref } from 'vue';
-  import { RechargeDataEntry } from './types';
+  import { AccountInfoEntry } from '../types';
+  import { getAccountInfoMock } from '../mock-utils';
   const tempData = {
     titles:[
       "账户信息"
     ]
   };
 
-  //MOCK DATA STARTED
+  //MOCK DATA START
 
-  const dataSource : RechargeDataEntry[] = [];
+  const dataSource : AccountInfoEntry[] = getAccountInfoMock();
 
-  function getOrderId(baseId: string, idIndex: number) : string{  //100000
-    return (parseInt(baseId) + idIndex).toString();
-  }
-
-  function getRandomUserId(length: number) : string{
-    let resultArray : number[] = [];
-    let i = 0;
-    while(i < length){
-      resultArray.push(Math.floor(Math.random() * 10));
-      i++;
-    }
-    return resultArray.join('');
-  }
-  
-  for(let i = 0; i < 20; i++){
-    dataSource.push({
-      key: (i+1).toString(),
-      orderId: getOrderId('100000', i),
-      userId: getRandomUserId(9),
-      rechargedAmount: Math.floor(Math.random() * 1000),
-      rechargeMethod: Math.random() < 0.5 ? '第三方支付' : '网站支付',
-      rechargeTime: '2024-5-13' 
-    })
-  }
+  //MOCK DATA END
   
 
   //TODO: 表格全页面显示

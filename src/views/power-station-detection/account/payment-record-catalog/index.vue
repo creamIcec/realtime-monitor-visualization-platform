@@ -7,65 +7,41 @@
       </div>
     </AreaBar>
     <Table :data-source="dataSource" :columns="tableColumns" class="full-page-table">
-      <!--<template #headerCell="{ column }">
-          <template>
-            <div class="table-cell">
-              {{ column.key }}
-            </div>
-          </template>
+      <!--
+        <template #headerCell="{ column }">
+            <template>
+              <div class="table-cell">
+                {{ column.key }}
+              </div>
+            </template>
 </template>
 <template #bodyCell="{ column, record }">
-          <template>
-            <div class="table-cell">
-              {{ record.name }}
-            </div>
-          </template>
-</template>-->
+            <template>
+              <div class="table-cell">
+                {{ record.name }}
+              </div>
+            </template>
+</template>
+-->
     </Table>
   </div>
 </template>
 <script setup lang="ts">
 import { AreaBar } from '@/components/AreaBar';
-import { DropdownButton, RangePicker, Space, Table } from "ant-design-vue";
-import { SpaceSize } from 'ant-design-vue/lib/space';
-import { ref } from 'vue';
-import { RechargeDataEntry } from './types';
-const size: SpaceSize = 8;
+import { DropdownButton, RangePicker, Table } from "ant-design-vue";
+import { getPaymentRecordsMock } from '../mock-utils';
+import { PaymentDataEntry } from '../types';
 const tempData = {
   titles: [
     "消费记录"
   ]
 };
 
-//MOCK DATA STARTED
+//MOCK DATA START
 
-const dataSource: RechargeDataEntry[] = [];
+const dataSource: PaymentDataEntry[] = getPaymentRecordsMock();
 
-function getOrderId(baseId: string, idIndex: number): string {  //100000
-  return (parseInt(baseId) + idIndex).toString();
-}
-
-function getRandomUserId(length: number): string {
-  let resultArray: number[] = [];
-  let i = 0;
-  while (i < length) {
-    resultArray.push(Math.floor(Math.random() * 10));
-    i++;
-  }
-  return resultArray.join('');
-}
-
-for (let i = 0; i < 20; i++) {
-  dataSource.push({
-    key: (i + 1).toString(),
-    orderId: getOrderId('100000', i),
-    userId: getRandomUserId(9),
-    rechargedAmount: Math.floor(Math.random() * 1000),
-    rechargeMethod: Math.random() < 0.5 ? '第三方支付' : '网站支付',
-    rechargeTime: '2024-5-13'
-  })
-}
-
+//MOCK DATA END
 
 //TODO: 表格全页面显示
 
@@ -82,23 +58,23 @@ const tableColumns = [
   },
   {
     title: '消费金额',
-    dataIndex: 'rechargedAmount',
-    key: 'rechargedAmount'
+    dataIndex: 'consumed',
+    key: 'consumed'
   },
   {
     title: '车牌号',
-    dataIndex: 'rechargeMethod',
-    key: 'rechargeMethod'
+    dataIndex: 'carLicenseNumber',
+    key: 'carLicenseNumber'
   },
   {
     title: '电桩ID',
-    dataIndex: 'rechargeTime',
-    key: 'rechargeTime'
+    dataIndex: 'chargerId',
+    key: 'chargerId'
   },
   {
     title: '枪号',
-    dataIndex: 'chargerId',
-    key: 'chargerId'
+    dataIndex: 'pileId',
+    key: 'pileId'
   },
   {
     title: '建单时间',
@@ -117,8 +93,8 @@ const tableColumns = [
   },
   {
     title: '实付金额',
-    dataIndex: 'realPayment',
-    key: 'realPayment'
+    dataIndex: 'actualPaymentAmount',
+    key: 'actualPaymentAmount'
   },
   {
     title: '停止码',
@@ -127,7 +103,7 @@ const tableColumns = [
   }
 ];
 
-const dataSourceRef = ref(dataSource);
+//const dataSourceRef = ref(dataSource);
 
 //MOCK DATA END
 

@@ -25,3 +25,9 @@ const componentSize = computed(() => appStore.getComponentSize)
 // Listening to page changes and dynamically changing site titles
 useTitle()
 </script>
+
+<style>
+.ant-table-row{
+  height: 60px;
+}
+</style>
