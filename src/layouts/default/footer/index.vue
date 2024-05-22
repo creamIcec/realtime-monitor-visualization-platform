@@ -1,7 +1,7 @@
 <template>
   <Footer :class="prefixCls" v-if="getShowLayoutFooter" ref="footerRef">
     <div :class="`${prefixCls}__links`">
-      <a @click="">南工大web作业系统</a>
+      <a @click="">充电桩管理系统</a>
 
       <GithubFilled @click="none" :class="`${prefixCls}__github`" />
 
